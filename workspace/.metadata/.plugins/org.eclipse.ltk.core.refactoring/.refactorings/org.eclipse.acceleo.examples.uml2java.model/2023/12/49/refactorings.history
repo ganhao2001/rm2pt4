@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;model.uml&apos; to &apos;test_UML_code_generate&apos;&#x0D;&#x0A;- Original project: &apos;org.eclipse.acceleo.examples.uml2java.model&apos;&#x0D;&#x0A;- Destination element: &apos;test_UML_code_generate&apos;&#x0D;&#x0A;- Original element: &apos;model.uml&apos;" description="Copy file" element1="model/model.uml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1701762964864" target="/test_UML_code_generate" units="0" version="1.0"/>
+</session>

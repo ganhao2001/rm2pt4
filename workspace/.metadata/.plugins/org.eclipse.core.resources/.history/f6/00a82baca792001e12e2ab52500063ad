@@ -1,0 +1,13 @@
+-- @path Classes=/Classes2Persons/Classes.ecore
+-- @path Persons=/Classes2Persons/Persons.ecore
+module Classes2Persons;
+
+create OUT: Persons from IN: Classes;
+
+
+helper context Classes!Member def: isStudent(): Boolean =
+	if not self.classStudent.oclIsUndefined() then
+		true
+	else
+		false
+	endif;

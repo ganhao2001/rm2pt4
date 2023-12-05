@@ -1,0 +1,37 @@
+-- @path Classes=/Classes2Persons/Classes.ecore
+-- @path Persons=/Classes2Persons/Persons.ecore
+module Classes2Persons;
+
+create OUT: Persons from IN: Classes;
+
+
+helper context Classes!Member def: isStudent(): Boolean =
+	if not self.classStudent.oclIsUndefined() then
+		true
+	else
+		false
+	endif;
+
+helper context Classes!Member def: classname: String =
+	if not self.classStudent.oclIsUndefined() then
+		self.classStudent.className
+	else
+		self.classTeacher.className
+	endif;
+
+rule Member2Student {
+	from
+		s: Classes!Member (s.isStudent())
+	to
+		t: Persons!Student (
+			fullName <- s.classname + ' ' + s.name
+		)
+}
+rule Member2Teacher {
+	from
+		s: Classes!Member (not s.isStudent())
+	to
+		t: Persons!Teacher (
+			fullName <- s.classname + ' ' + s.name
+		)
+}

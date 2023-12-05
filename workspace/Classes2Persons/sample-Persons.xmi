@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Persons">
+  <Student fullName="Class23 Cindy"/>
+  <Student fullName="Class23 Brandon"/>
+  <Student fullName="Class23 Brenda"/>
+  <Student fullName="Class21 Jackie"/>
+  <Student fullName="Class21 David"/>
+  <Student fullName="Class21 Dylan"/>
+  <Teacher fullName="Class23 Jim"/>
+  <Teacher fullName="Class21 Peter"/>
+  <Teacher fullName="Class21 Kelly"/>
+</xmi:XMI>

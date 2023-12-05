@@ -1,0 +1,5 @@
+-- @path Classes=/Classes2Persons/Classes.ecore
+-- @path Persons=/Classes2Persons/Persons.ecore
+module Classes2Persons;
+
+create OUT: Persons from IN: Classes;

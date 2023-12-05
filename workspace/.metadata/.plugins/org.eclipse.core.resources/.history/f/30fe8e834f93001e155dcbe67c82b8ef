@@ -1,0 +1,7 @@
+[comment encoding = UTF-8 /]
+[module umlToBeans('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+
+[template public umlToBeans(aPackage : Package)]
+[comment @main/]
+[/template]
